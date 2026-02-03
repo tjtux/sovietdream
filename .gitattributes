@@ -1,0 +1,141 @@
+# ===============================================
+# Unity .gitattributes
+# ===============================================
+
+# -----------------------------------------------
+# Normalização de final de linha
+# -----------------------------------------------
+# Detecta automaticamente e normaliza para LF no repositório
+* text=auto
+
+# -----------------------------------------------
+# Arquivos de texto (Unity usa LF internamente)
+# -----------------------------------------------
+*.cs text diff=csharp
+*.shader text
+*.cginc text
+*.hlsl text
+*.compute text
+
+# -----------------------------------------------
+# Unity YAML (cenas, prefabs, assets)
+# -----------------------------------------------
+*.unity text merge=unityyamlmerge eol=lf
+*.prefab text merge=unityyamlmerge eol=lf
+*.asset text eol=lf
+*.meta text eol=lf
+*.mat text eol=lf
+*.anim text eol=lf
+*.controller text eol=lf
+*.overrideController text eol=lf
+*.physicMaterial text eol=lf
+*.physicsMaterial2D text eol=lf
+*.playable text eol=lf
+*.mask text eol=lf
+*.brush text eol=lf
+*.flare text eol=lf
+*.fontsettings text eol=lf
+*.guiskin text eol=lf
+*.giparams text eol=lf
+*.renderTexture text eol=lf
+*.spriteatlas text eol=lf
+*.terrainlayer text eol=lf
+*.mixer text eol=lf
+*.shadervariants text eol=lf
+*.preset text eol=lf
+*.signal text eol=lf
+
+# -----------------------------------------------
+# Input System
+# -----------------------------------------------
+*.inputactions text eol=lf
+
+# -----------------------------------------------
+# Configuração e documentação
+# -----------------------------------------------
+*.json text eol=lf
+*.xml text eol=lf
+*.txt text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# -----------------------------------------------
+# Arquivos binários (não normalizar, usar LFS se necessário)
+# -----------------------------------------------
+# Imagens
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.bmp binary
+*.tga binary
+*.tiff binary
+*.tif binary
+*.psd binary
+*.hdr binary
+*.exr binary
+*.iff binary
+*.pict binary
+*.ico binary
+*.svg binary
+
+# Áudio
+*.mp3 binary
+*.ogg binary
+*.wav binary
+*.aiff binary
+*.aif binary
+*.mod binary
+*.it binary
+*.s3m binary
+*.xm binary
+*.flac binary
+
+# Vídeo
+*.mp4 binary
+*.mov binary
+*.avi binary
+*.webm binary
+*.wmv binary
+
+# Fontes
+*.ttf binary
+*.otf binary
+*.fnt binary
+
+# Modelos 3D
+*.fbx binary
+*.obj binary
+*.dae binary
+*.blend binary
+*.3ds binary
+*.max binary
+*.mb binary
+*.ma binary
+*.dxf binary
+
+# Compactados
+*.zip binary
+*.7z binary
+*.gz binary
+*.rar binary
+*.tar binary
+
+# Executáveis e bibliotecas
+*.exe binary
+*.dll binary
+*.so binary
+*.dylib binary
+*.a binary
+*.pdb binary
+
+# Unity específicos
+*.cubemap binary
+*.unitypackage binary
+*.bytes binary
+*.reason binary
+
+# Aseprite
+*.ase binary
+*.aseprite binary
